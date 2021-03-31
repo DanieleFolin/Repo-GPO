@@ -8,9 +8,17 @@ public class AgenziaViaggi {
 
         System.out.print(8);
         String ciao = funzioneProva();
+
+        bho();
+
+        int bho = 100;
     }
 
     private static String funzioneProva(){
         return "ciao";
+    }
+
+    private static void bho(){
+        System.out.print("bho");
     }
 }
