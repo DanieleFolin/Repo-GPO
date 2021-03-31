@@ -9,9 +9,11 @@ public class AgenziaViaggi {
         System.out.print(8);
         String ciao = funzioneProva();
 
+
         bho();
 
-        int bho = 100;
+        int bho = 100; 
+        prova();
     }
 
     private static String funzioneProva(){
@@ -21,4 +23,10 @@ public class AgenziaViaggi {
     private static void bho(){
         System.out.print("bho");
     }
+
+    public static void prova(){
+        int i = 2000;
+
+    }
+
 }
