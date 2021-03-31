@@ -8,5 +8,12 @@ public class AgenziaViaggi {
 
         System.out.print(8);
 
+        prova();
+
     }
+
+    public static void prova(){
+        int i = 2000;
+    }
+
 }
