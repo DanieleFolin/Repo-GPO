@@ -14,6 +14,7 @@ import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
@@ -103,8 +104,12 @@ public class TravelsBookedActivity extends AppCompatActivity {
             final ImageView imgv = convertView.findViewById(R.id.imageView2);
             final TextView txtv = convertView.findViewById(R.id.textView);
             final TextView txtv1 = convertView.findViewById(R.id.textView2);
+            final ImageButton btn = convertView.findViewById(R.id.button);
             //final Button btn = convertView.findViewById(R.id.button);
 
+            btn.setEnabled(false);
+            btn.setActivated(false);
+            btn.setVisibility(View.INVISIBLE);
             imgv.setImageResource(R.drawable.ic_launcher_background);
             txtv.setText(viaggi.get(position).getNome());
             txtv1.setText(viaggi.get(position).getDescrizione());

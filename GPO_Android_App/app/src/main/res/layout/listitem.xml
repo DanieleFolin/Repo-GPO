@@ -44,14 +44,14 @@
             android:text="TextView"
             android:textAlignment="center" />
 
-        <Button
+        <ImageButton
             android:id="@+id/button"
-            android:layout_width="13dp"
-            android:layout_height="match_parent"
+            android:layout_width="5dp"
+            android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="i"
-            android:textAllCaps="false"
-            android:textSize="30sp" />
+            android:backgroundTint="#418BC34A"
+            android:translationY="25dp"
+            app:srcCompat="@android:drawable/ic_input_add" />
 
     </LinearLayout>
 

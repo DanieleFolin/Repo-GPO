@@ -48,10 +48,10 @@ public class ClientThread extends Thread {
 
             // make a bunch of messages to send.
             List<Message> messages = new ArrayList<>();
-            messages.add(new Message("Hello from the other side!"));    //Database o Server
-            messages.add(new Message("How are you doing?"));    //Object Type
-            messages.add(new Message("What time is it?"));  //Filtro1
-            messages.add(new Message("Hi hi hi hi."));  //Filtro2
+            messages.add(new Message("Database o server"));    //Database o Server
+            messages.add(new Message("Object Type"));    //Object Type
+            messages.add(new Message("Filtro1"));  //Filtro1
+            messages.add(new Message("Filtro2"));  //Filtro2
 
             objectOutputStream.writeObject(messages);
 

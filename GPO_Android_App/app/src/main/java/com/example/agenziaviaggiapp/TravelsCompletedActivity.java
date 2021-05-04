@@ -13,6 +13,7 @@ import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
@@ -103,7 +104,7 @@ public class TravelsCompletedActivity extends AppCompatActivity {
             final ImageView imgv = convertView.findViewById(R.id.imageView2);
             final TextView txtv = convertView.findViewById(R.id.textView);
             final TextView txtv1 = convertView.findViewById(R.id.textView2);
-            final Button btn = convertView.findViewById(R.id.button);
+            final ImageButton btn = convertView.findViewById(R.id.button);
 
             imgv.setImageResource(R.drawable.ic_launcher_background);
             txtv.setText(viaggi.get(position).getNome());
