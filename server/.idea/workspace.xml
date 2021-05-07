@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="5b3d46bc-038b-4064-8662-113ba443deea" name="Default Changelist" comment="Prova di modifica 4">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/mysql_connector_java_8_0_24.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/mysql-connector-java-8.0.24.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/gpo/agenziaviaggi/classes/Aeroporto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/gpo/agenziaviaggi/classes/CompagniaAerea.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/gpo/agenziaviaggi/classes/Utente.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/gpo/agenziaviaggi/classes/Viaggio.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/gpo/agenziaviaggi/classes/Volo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/gpo/agenziaviaggi/classes/VoloDaLista.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Repo-GPO.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Repo-GPO.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/gpo/agenziaviaggi/DatabaseConnector.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/gpo/agenziaviaggi/DatabaseConnector.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="hiddenUrls">
+      <set>
+        <option value="https://github.com/DanieleFolin/Repo-GPO" />
+      </set>
+    </option>
+  </component>
+  <component name="ProjectId" id="1qW7L07FwvGsyCmvDo6s7BmgUqf" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/libs/mysql-connector-java-8.0.24.jar" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="Errors" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SvnConfiguration">
+    <configuration>C:\Users\Matteo\AppData\Roaming\Subversion</configuration>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="5b3d46bc-038b-4064-8662-113ba443deea" name="Default Changelist" comment="" />
+      <created>1617183436691</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1617183436691</updated>
+    </task>
+    <task id="LOCAL-00001" summary="Revert &quot;Creazione Progetto&quot;&#10;&#10;This reverts commit 3e6e4c5bdb46f5e0ba15a8c6fa4dbc5a1d9fdbae.&#10;&#10;# Conflicts:&#10;#&#9;src/.idea/.gitignore&#10;#&#9;src/.idea/misc.xml&#10;#&#9;src/.idea/modules.xml&#10;#&#9;src/.idea/vcs.xml&#10;#&#9;src/Repo-GPO.iml&#10;#&#9;src/com/gpo/agenziaviaggi/AgenziaViaggi.java">
+      <created>1617206151201</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1617206151201</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Prova di modifica">
+      <created>1617206239481</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1617206239481</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Prova di modifica 2">
+      <created>1617206959255</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1617206959255</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Prova di modifica 3">
+      <created>1617207500927</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1617207500927</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Prova di modifica 3">
+      <created>1617207531642</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1617207531642</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Prova di modifica 4">
+      <created>1617207668335</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1617207668335</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Revert &quot;Creazione Progetto&quot;&#10;&#10;This reverts commit 3e6e4c5bdb46f5e0ba15a8c6fa4dbc5a1d9fdbae.&#10;&#10;# Conflicts:&#10;#&#9;src/.idea/.gitignore&#10;#&#9;src/.idea/misc.xml&#10;#&#9;src/.idea/modules.xml&#10;#&#9;src/.idea/vcs.xml&#10;#&#9;src/Repo-GPO.iml&#10;#&#9;src/com/gpo/agenziaviaggi/AgenziaViaggi.java" />
+    <MESSAGE value="Prova di modifica" />
+    <MESSAGE value="Prova di modifica 2" />
+    <MESSAGE value="Prova di modifica 3" />
+    <MESSAGE value="Prova di modifica 4" />
+    <option name="LAST_COMMIT_MESSAGE" value="Prova di modifica 4" />
+  </component>
+</project>
