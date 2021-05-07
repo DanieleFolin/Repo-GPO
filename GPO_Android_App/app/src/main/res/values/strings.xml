@@ -1,3 +1,14 @@
 <resources>
     <string name="app_name">AgenziaViaggiApp</string>
+
+    <string-array name="viaggi">
+        <item>Polonia</item>
+        <item>Lussemburgo</item>
+        <item>Canada</item>
+        <item>Andorra</item>
+        <item>Grecia</item>
+        <item>Islanda</item>
+        <item>Tibet</item>
+        <item>India</item>
+    </string-array>
 </resources>

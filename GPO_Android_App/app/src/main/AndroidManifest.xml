@@ -13,6 +13,7 @@
         <activity android:name=".TravelsBookedActivity" />
         <activity android:name=".TravelsCompletedActivity" />
         <activity android:name=".HomeActivity" />
+        <activity android:name=".ResearchActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

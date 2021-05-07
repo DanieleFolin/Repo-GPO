@@ -39,6 +39,9 @@ public class HomeActivity extends AppCompatActivity {
             case R.id.travels_booked:
                 intent = new Intent(getApplicationContext(), TravelsBookedActivity.class);
                 break;
+            case R.id.research:
+                intent = new Intent(getApplicationContext(), ResearchActivity.class);
+                break;
             case R.id.logout:
                 break;
         }
