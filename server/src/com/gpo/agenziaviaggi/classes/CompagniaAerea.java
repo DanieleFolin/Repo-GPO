@@ -2,7 +2,7 @@ package com.gpo.agenziaviaggi.classes;
 
 public class CompagniaAerea {
 
-    private int id;
+    private final int id;
     private String nome;
     private String nazione;
     private int tipoDiCompagnia;

@@ -2,7 +2,7 @@ package com.gpo.agenziaviaggi.classes;
 
 public class Volo {
 
-    private int id;
+    private final int id;
     private int nPosti;
     private VoloDaLista voloDaLista;
 
@@ -10,6 +10,11 @@ public class Volo {
         this.id = id;
         this.nPosti = nPosti;
         this.voloDaLista = voloDaLista;
+    }
+
+    public Volo(int id, int nPosti) {
+        this.id = id;
+        this.nPosti = nPosti;
     }
 
     public int getId() {

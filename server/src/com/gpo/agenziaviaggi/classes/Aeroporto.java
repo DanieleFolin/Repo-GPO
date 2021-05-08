@@ -2,7 +2,7 @@ package com.gpo.agenziaviaggi.classes;
 
 public class Aeroporto {
 
-    private int id;
+    private final int id;
     private String nome;
     private String luogo;
 

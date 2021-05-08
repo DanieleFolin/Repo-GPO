@@ -1,23 +1,35 @@
 package com.gpo.agenziaviaggi.classes;
 
-import java.time.LocalDate;
-import java.util.ArrayList;
+import java.util.Date;
 
 public class Viaggio {
 
-    private int id;
+    private final int id;
+    private String nome;
     private float prezzo;
     private float valutazione;
-    private LocalDate dataPartenza;
-    private LocalDate dataRitorno;
-    private ArrayList<Volo> voli;
+    private Date dataPartenza;
+    private Date dataRitorno;
 
-    public Viaggio(int id, float prezzo, LocalDate dataPartenza, LocalDate dataRitorno, ArrayList<Volo> voli) {
+    public Viaggio(int id, String nome, float prezzo, Date dataPartenza, Date dataRitorno) {
         this.id = id;
+        this.nome = nome;
         this.prezzo = prezzo;
         this.dataPartenza = dataPartenza;
         this.dataRitorno = dataRitorno;
-        this.voli = voli;
+    }
+
+    public Viaggio(int id, String nome, float prezzo, float valutazione, Date dataPartenza, Date dataRitorno) {
+        this(id, nome, prezzo, dataPartenza, dataRitorno);
+        this.valutazione = valutazione;
+    }
+
+    public String getNome() {
+        return nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
     }
 
     public int getId() {
@@ -40,27 +52,20 @@ public class Viaggio {
         this.valutazione = valutazione;
     }
 
-    public LocalDate getDataPartenza() {
+    public Date getDataPartenza() {
         return dataPartenza;
     }
 
-    public void setDataPartenza(LocalDate dataPartenza) {
+    public void setDataPartenza(Date dataPartenza) {
         this.dataPartenza = dataPartenza;
     }
 
-    public LocalDate getDataRitorno() {
+    public Date getDataRitorno() {
         return dataRitorno;
     }
 
-    public void setDataRitorno(LocalDate dataRitorno) {
+    public void setDataRitorno(Date dataRitorno) {
         this.dataRitorno = dataRitorno;
     }
 
-    public ArrayList<Volo> getVoli() {
-        return voli;
-    }
-
-    public void setVoli(ArrayList<Volo> voli) {
-        this.voli = voli;
-    }
 }
