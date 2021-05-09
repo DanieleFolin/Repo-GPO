@@ -33,7 +33,7 @@
         android:inputType="textPersonName"
         android:padding="10dp"
         android:singleLine="true"
-        android:text="dfjfgxfgmjnhthhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh"
+        android:text="Il viaggio è stato..."
         android:textAlignment="textStart"
         android:verticalScrollbarPosition="right"
         app:layout_constraintBottom_toBottomOf="parent"

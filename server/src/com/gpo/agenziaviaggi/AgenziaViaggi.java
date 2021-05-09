@@ -1,32 +1,20 @@
 package com.gpo.agenziaviaggi;
 
+import java.sql.SQLException;
+
 public class AgenziaViaggi {
 
     public static void main(String[] args) {
 
-        int prova = 10;
-
-        System.out.print(8);
-        String ciao = funzioneProva();
-
-
-        bho();
-
-        int bho = 100; 
-        prova();
+        int n = 20;
+        try {
+            DatabaseConnector dbC = new DatabaseConnector();
+            for(int i = 0; i < n; i++){
+                ServerThread st = new ServerThread(1300 + i, dbC);
+                st.start();
+            }
+        } catch (SQLException throwables) {
+            throwables.printStackTrace();
+        }
     }
-
-    private static String funzioneProva(){
-        return "ciao";
-    }
-
-    private static void bho(){
-        System.out.print("bho");
-    }
-
-    public static void prova(){
-        int i = 2000;
-
-    }
-
 }

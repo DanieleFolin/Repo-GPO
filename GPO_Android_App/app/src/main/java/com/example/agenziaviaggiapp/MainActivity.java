@@ -64,7 +64,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             Toast.makeText(this, "A username and a password are required", Toast.LENGTH_SHORT).show();
         }else {
             if (signUpModeActive){
-                Cliente user = new Cliente();
+                Utente user = new Utente("Matteo", "Bergagna", "MarBerSpace", "Bergagna123");
                 user.setUsername(usernameEditText.getText().toString());
                 user.setPassword(passwordEditText.getText().toString());
             }else{

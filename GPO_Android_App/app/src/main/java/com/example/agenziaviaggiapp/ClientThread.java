@@ -1,6 +1,8 @@
 package com.example.agenziaviaggiapp;
 
 import java.io.IOException;
+import java.io.InputStream;
+import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 import java.io.OutputStream;
 import java.lang.Thread;
@@ -13,56 +15,72 @@ public class ClientThread extends Thread {
 
     private final String hostname;
     private final int port;
-    private int number;
-    private int initNumber;
+    private String ActionType;
+    private String ID;
+    private String Username;
+    private String Password;
+    private Object Risorsa = null;
 
     public ClientThread(String hostname, int port){
         super();
         this.hostname = hostname;
         this.port = port;
-        number = 0;
     }
 
-    public void setNumber(int numberToSend) {
-        this.number = numberToSend;
-        this.initNumber = numberToSend;
+    public void aggiungiParametri(String actionType, int id){
+        this.ActionType = actionType;
+        this.ID = Integer.toString(id);
     }
 
-    public int getNumber(){ return number; }
+    public void aggiungiParametri(String username, String password){
+        this.ActionType = "VerificaUtente";
+        this.Username = username;
+        this.Password = password;
+    }
 
     public boolean isReady(){
-        if(number != initNumber){
-            return false;
-        } else {
+        if(Risorsa == null){
             return true;
+        }else{
+            return false;
         }
     }
+
+    //IsReady
 
     @Override
     public void run(){
         try (Socket socket = new Socket(hostname, port)){
-            // get the output stream from the socket.
+
+            //Scrittura
             OutputStream outputStream = socket.getOutputStream();
-            // create an object output stream from the output stream so we can send an object through it
             ObjectOutputStream objectOutputStream = new ObjectOutputStream(outputStream);
 
-            // make a bunch of messages to send.
             List<Message> messages = new ArrayList<>();
-            messages.add(new Message("Database o server"));    //Database o Server
-            messages.add(new Message("Object Type"));    //Object Type
-            messages.add(new Message("Filtro1"));  //Filtro1
-            messages.add(new Message("Filtro2"));  //Filtro2
+            messages.add(new Message(ActionType));    //Object Type
+            if(ActionType.equals("VerificaUtente")){
+                messages.add(new Message(Username));
+                messages.add(new Message(Password));
+            }else{
+                messages.add(new Message(ID));
+            }
 
             objectOutputStream.writeObject(messages);
 
             while(isReady()){
-                number = socket.getInputStream().read();    //Legge la risorsa ricevuta
+                //Lettura
+                InputStream inputStream = socket.getInputStream();
+                ObjectInputStream objectInputStream = new ObjectInputStream(inputStream);
+
+                Risorsa = objectInputStream.readObject();
             }
 
         } catch (UnknownHostException ex) {
             System.out.println("Server not found: " + ex.getMessage());
         } catch (IOException e){
             System.out.println("I/O error: " + e.getMessage());
+        } catch (ClassNotFoundException e) {
+            e.printStackTrace();
         }
     }
 }
