@@ -20,6 +20,7 @@ import android.widget.ListView;
 import android.widget.TextView;
 
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 
 public class TravelsBookedActivity extends AppCompatActivity {
@@ -39,19 +40,18 @@ public class TravelsBookedActivity extends AppCompatActivity {
         ActionBar actionBar = getSupportActionBar();
         actionBar.setDisplayHomeAsUpEnabled(true);
 
+        Date dataInizio = new Date();
+        Date dataFine = new Date();
         listiv = findViewById(R.id.listViewId);
         oldIntent = getIntent();
         views = new ArrayList<>();
         viaggi = new ArrayList<>();
 
-        Viaggio viaggioA = new Viaggio();
-        Viaggio viaggioB = new Viaggio();
-        Viaggio viaggioC = new Viaggio();
-        viaggioA.setNome("Kansas");
+        Viaggio viaggioA = new Viaggio(0, "Kansas", 100, dataInizio, dataFine);
+        Viaggio viaggioB = new Viaggio(1, "Alaska", 100, dataInizio, dataFine);
+        Viaggio viaggioC = new Viaggio(2, "Illinois", 100, dataInizio, dataFine);
         viaggioA.setDescrizione("Viaggio in Kansas");
-        viaggioB.setNome("Alaska");
         viaggioB.setDescrizione("Viaggio in Alaska");
-        viaggioC.setNome("Illinois");
         viaggioC.setDescrizione("Viaggio in Illinois");
         viaggi.add(viaggioA);
         viaggi.add(viaggioB);

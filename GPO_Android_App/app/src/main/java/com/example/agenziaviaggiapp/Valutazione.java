@@ -2,11 +2,11 @@ package com.example.agenziaviaggiapp;
 
 public class Valutazione {
 
-    private Cliente utenteValutatore;
+    private Utente utenteValutatore;
     private String descrizione;
     private int voto;
 
-    public Valutazione(Cliente utente, String descrizione, int voto){
+    public Valutazione(Utente utente, String descrizione, int voto){
         this.utenteValutatore = utente;
         this.descrizione = descrizione;
         this.voto = voto;

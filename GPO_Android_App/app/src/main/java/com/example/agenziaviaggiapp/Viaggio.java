@@ -4,22 +4,25 @@ import java.util.Date;
 
 public class Viaggio {
 
-    private int id;
+    private final int id;
     private String nome;
-    private String descrizione;
+    private float prezzo;
+    private float valutazione;
     private Date dataPartenza;
-    private Date dataArrivo;
+    private Date dataRitorno;
+    private String Descrizione;
 
-    public Viaggio(){
-
-    }
-
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
+    public Viaggio(int id, String nome, float prezzo, Date dataPartenza, Date dataRitorno) {
         this.id = id;
+        this.nome = nome;
+        this.prezzo = prezzo;
+        this.dataPartenza = dataPartenza;
+        this.dataRitorno = dataRitorno;
+    }
+
+    public Viaggio(int id, String nome, float prezzo, float valutazione, Date dataPartenza, Date dataRitorno) {
+        this(id, nome, prezzo, dataPartenza, dataRitorno);
+        this.valutazione = valutazione;
     }
 
     public String getNome() {
@@ -30,12 +33,24 @@ public class Viaggio {
         this.nome = nome;
     }
 
-    public String getDescrizione() {
-        return descrizione;
+    public int getId() {
+        return id;
     }
 
-    public void setDescrizione(String descrizione) {
-        this.descrizione = descrizione;
+    public float getPrezzo() {
+        return prezzo;
+    }
+
+    public void setPrezzo(float prezzo) {
+        this.prezzo = prezzo;
+    }
+
+    public float getValutazione() {
+        return valutazione;
+    }
+
+    public void setValutazione(float valutazione) {
+        this.valutazione = valutazione;
     }
 
     public Date getDataPartenza() {
@@ -46,11 +61,19 @@ public class Viaggio {
         this.dataPartenza = dataPartenza;
     }
 
-    public Date getDataArrivo() {
-        return dataArrivo;
+    public Date getDataRitorno() {
+        return dataRitorno;
     }
 
-    public void setDataArrivo(Date dataArrivo) {
-        this.dataArrivo = dataArrivo;
+    public void setDataRitorno(Date dataRitorno) {
+        this.dataRitorno = dataRitorno;
+    }
+
+    public String getDescrizione() {
+        return Descrizione;
+    }
+
+    public void setDescrizione(String descrizione) {
+        this.Descrizione = descrizione;
     }
 }

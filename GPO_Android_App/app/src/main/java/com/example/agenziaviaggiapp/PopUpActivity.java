@@ -26,7 +26,7 @@ public class PopUpActivity extends AppCompatActivity {
     ArrayList<String> tables;
     ArrayList<Integer> marks;
     Intent intentBack;
-    Cliente utenteProvvisorio;
+    Utente utenteProvvisorio;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

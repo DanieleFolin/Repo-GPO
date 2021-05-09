@@ -5,8 +5,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5b3d46bc-038b-4064-8662-113ba443deea" name="Default Changelist" comment="Prova di modifica 4">
+      <change afterPath="$PROJECT_DIR$/../.idea/Repo-GPO.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../GPO_Android_App/app/src/main/java/com/example/agenziaviaggiapp/Aeroporto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../GPO_Android_App/app/src/main/java/com/example/agenziaviaggiapp/CompagniaAerea.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../GPO_Android_App/app/src/main/java/com/example/agenziaviaggiapp/Utente.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../GPO_Android_App/app/src/main/java/com/example/agenziaviaggiapp/Volo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../GPO_Android_App/app/src/main/java/com/example/agenziaviaggiapp/VoloDaLista.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/gpo/agenziaviaggi/Message.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/gpo/agenziaviaggi/ServerThread.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GPO_Android_App/app/src/main/java/com/example/agenziaviaggiapp/ClientThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/../GPO_Android_App/app/src/main/java/com/example/agenziaviaggiapp/ClientThread.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GPO_Android_App/app/src/main/java/com/example/agenziaviaggiapp/Cliente.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GPO_Android_App/app/src/main/java/com/example/agenziaviaggiapp/Prenotazione.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GPO_Android_App/app/src/main/java/com/example/agenziaviaggiapp/TravelsCompletedActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../GPO_Android_App/app/src/main/java/com/example/agenziaviaggiapp/TravelsCompletedActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GPO_Android_App/app/src/main/java/com/example/agenziaviaggiapp/Viaggio.java" beforeDir="false" afterPath="$PROJECT_DIR$/../GPO_Android_App/app/src/main/java/com/example/agenziaviaggiapp/Viaggio.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GPO_Android_App/app/src/main/res/layout/activity_pop_up.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../GPO_Android_App/app/src/main/res/layout/activity_pop_up.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/gpo/agenziaviaggi/DatabaseConnector.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/gpo/agenziaviaggi/DatabaseConnector.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/gpo/agenziaviaggi/AgenziaViaggi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/gpo/agenziaviaggi/AgenziaViaggi.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
