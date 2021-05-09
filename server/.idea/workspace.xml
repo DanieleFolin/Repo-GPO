@@ -7,12 +7,6 @@
     <list default="true" id="5b3d46bc-038b-4064-8662-113ba443deea" name="Default Changelist" comment="Prova di modifica 4">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/gpo/agenziaviaggi/DatabaseConnector.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/gpo/agenziaviaggi/DatabaseConnector.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/gpo/agenziaviaggi/classes/Aeroporto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/gpo/agenziaviaggi/classes/Aeroporto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/gpo/agenziaviaggi/classes/CompagniaAerea.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/gpo/agenziaviaggi/classes/CompagniaAerea.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/gpo/agenziaviaggi/classes/Utente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/gpo/agenziaviaggi/classes/Utente.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/gpo/agenziaviaggi/classes/Viaggio.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/gpo/agenziaviaggi/classes/Viaggio.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/gpo/agenziaviaggi/classes/Volo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/gpo/agenziaviaggi/classes/Volo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/gpo/agenziaviaggi/classes/VoloDaLista.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/gpo/agenziaviaggi/classes/VoloDaLista.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

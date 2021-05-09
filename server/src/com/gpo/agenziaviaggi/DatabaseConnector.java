@@ -65,8 +65,8 @@ public class DatabaseConnector {
                 "CREATE TABLE Utente (" +
                         "ID int not null AUTO_INCREMENT PRIMARY KEY," +
                         "Nome varchar(40) not null," +
-                        "Cognome varchar(40) not null" +
-                        "Username varchar(40) not null UNIQUE" +
+                        "Cognome varchar(40) not null," +
+                        "Username varchar(40) not null UNIQUE," +
                         "Password varchar(40) not null" +
                         ");";
 
@@ -83,12 +83,13 @@ public class DatabaseConnector {
         Statement statement = connection.createStatement();
 
         String createTable =
-                "CREATE TABLE Aeroporto (ID int not null AUTO_INCREMENT PRIMARY KEY," +
+                "CREATE TABLE Aeroporto (" +
+                        "ID int not null AUTO_INCREMENT PRIMARY KEY," +
                         "Nome varchar(100) not null," +
                         "Luogo varchar(150) not null" +
                         ");";
 
-        statement.executeQuery(createTable); //TODO controllare tipo di execute
+        statement.executeQuery(createTable);
         statement.close();
     }
 
@@ -103,8 +104,8 @@ public class DatabaseConnector {
         String createTable =
                 "CREATE TABLE Compagnia_Aerea (" +
                         "ID int not null AUTO_INCREMENT PRIMARY KEY," +
-                        "Nome varchar(60) not null" +
-                        "Nazione varchar(60)" +
+                        "Nome varchar(60) not null," +
+                        "Nazione varchar(60)," +
                         "TipoCompagnia int not null" +
                         ");";
 
@@ -119,7 +120,6 @@ public class DatabaseConnector {
      */
     private void createListaVoliTable(Connection connection) throws SQLException {
         Statement statement = connection.createStatement();
-        //TODO controllare foreing key e costruzione tabella
         String createTable =
                 "CREATE TABLE Lista_Voli (" +
                         "ID int not null AUTO_INCREMENT PRIMARY KEY," +
@@ -132,7 +132,7 @@ public class DatabaseConnector {
                         "N_Posti_Disponibili int not null," +
                         "FOREIGN KEY (Compagnia_Aerea) REFERENCES Compagnia_Aerea(ID)," +
                         "FOREIGN KEY (Aereoporto_Partenza) REFERENCES Aereoporto(ID)," +
-                        "FOREIGN KEY (Aereoporto_Arrivo) REFERENCES Aereoporto(ID)," +
+                        "FOREIGN KEY (Aereoporto_Arrivo) REFERENCES Aereoporto(ID)" +
                         ");";
 
         statement.executeUpdate(createTable);
@@ -149,13 +149,13 @@ public class DatabaseConnector {
         String createTable =
                 "CREATE TABLE Viaggio (" +
                         "ID int not null AUTO_INCREMENT PRIMARY KEY," +
-                        "Nome varcar(50) not null" +
-                        "Prezzo float" +
-                        "Valutazione float" +
+                        "Nome varcar(50) not null," +
+                        "Prezzo float," +
+                        "Valutazione float," +
                         "Data_Partenza date not null," +
-                        "Data_Ritorno date not null" +
-                        "ID_Utente int not null" +
-                        "FOREIGN KEY (ID_Utente) REFERENCES Utente(ID)," +
+                        "Data_Ritorno date not null," +
+                        "ID_Utente int not null," +
+                        "FOREIGN KEY (ID_Utente) REFERENCES Utente(ID)" +
                         ");";
 
         statement.executeUpdate(createTable);
@@ -169,7 +169,7 @@ public class DatabaseConnector {
      */
     private void createVoloTable(Connection connection) throws SQLException {
         Statement statement = connection.createStatement();
-        //TODO controllare foreing key e costruzione tabella
+
         String createTable =
                 "CREATE TABLE Volo (" +
                         "ID int not null AUTO_INCREMENT PRIMARY KEY," +
@@ -551,4 +551,3 @@ public class DatabaseConnector {
     }
 
 }
-//TODO controllare tutti gli ottieni per fare la verifica dell'esistenza
